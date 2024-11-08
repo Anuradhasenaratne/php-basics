@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="row w-100">
+            <div class="col-md-8 col-lg-6 mx-auto">
+                <div class="card shadow-lg border-light">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h4 class="card-title">Student Registration</h4>
+                    </div>
+                    <div class="card-body">
+                        <form action="register.php" method="post">
+                            <div class="form-group">
+                                <label for="student_id">Student ID</label>
+                                <input type="text" class="form-control" id="student_id" name="student_id" placeholder="Enter Student ID" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="student_name">Student Name</label>
+                                <input type="text" class="form-control" id="student_name" name="student_name" placeholder="Enter Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="student_nic">Student NIC</label>
+                                <input type="text" class="form-control" id="student_nic" name="student_nic" placeholder="Enter NIC" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="student_course">Student Course</label>
+                                <input type="text" class="form-control" id="student_course" name="student_course" placeholder="Enter Course" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="student_password">Password</label>
+                                <input type="password" class="form-control" id="student_password" name="student_password" placeholder="Enter Password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="retype_password">Retype Password</label>
+                                <input type="password" class="form-control" id="retype_password" name="retype_password" placeholder="Retype Password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
